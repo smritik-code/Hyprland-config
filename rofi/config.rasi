@@ -1,0 +1,103 @@
+* {
+    font: "AurulentSansMono Nerd Font 13";  /* Set the font to AurulentSansMono Nerd Font */
+    g-spacing: 10px;                      /* Spacing between items */
+    g-margin: 0;                          /* No margins */
+    b-color: #000000FF;                   /* Background color */
+    fg-color: #FFFFFFFF;                  /* Foreground (text) color */
+    fgp-color: #888888FF;                 /* Placeholder text color */
+    b-radius: 8px;                        /* Rounded corners */
+    g-padding: 8px;                       /* Padding for the UI elements */
+    hl-color: #FFFFFF;                    /* Highlighted item background color */
+    hlt-color: #000000FF;                 /* Highlighted text color */
+    alt-color: #111111FF;                 /* Alternate item background color */
+    wbg-color: #000000CC;                 /* Window background color */
+    w-border: 0px solid;                  /* No window border */
+    w-border-color: transparent;          /* Removed blue border */
+    transparency: "real";                 /* Real transparency for the window */
+}
+
+configuration {
+    modi: "drun,run,window";             /* Enable run dialog, window switcher, and application launcher */
+    show-icons: true;                    /* Show icons */
+    display-drun: " ";                   /* Icon for the application search mode */
+}
+
+listview {
+    columns: 2;                          /* Two column layout */
+    lines: 7;                            /* Maximum number of visible items */
+    fixed-height: true;                  /* Fixed height for items */
+    fixed-columns: true;                 /* Keep the column count fixed */
+    cycle: false;                         /* Disable cycling through items */
+    scrollbar: false;                     /* Enable scrollbar */
+    border: 0px solid;                   /* No border for the listview */
+}
+
+window {
+    transparency: "real";                /* Set window transparency */
+    width: 100%;                         /* Window set to fullscreen */
+    height: 100%;
+    border-radius: @b-radius;            /* Rounded corners */
+    background-color: @wbg-color;        /* Background color of the window */
+    border: @w-border;                   /* Border width */
+    border-color: transparent;           /* Transparent border */
+    padding: 30% 20% 30% 20%;
+
+}
+
+prompt {
+    text-color: @fg-color;               /* Color for the prompt text */
+}
+
+inputbar {
+    children: ["prompt", "entry"];       /* Input bar contains the prompt and the search entry */
+    spacing: @g-spacing;                 /* Spacing between elements */
+}
+
+entry {
+    placeholder: "Search Apps";          /* Placeholder text */
+    text-color: @fg-color;               /* Text color */
+    placeholder-color: @fgp-color;       /* Placeholder text color */
+}
+
+mainbox {
+    spacing: @g-spacing;                 /* Spacing between mainbox elements */
+    margin: @g-margin;                   /* Margin around the mainbox */
+    padding: @g-padding;                 /* Padding inside the mainbox */
+    children: ["inputbar", "listview", "message"];
+}
+
+element {
+    spacing: @g-spacing;                 /* Spacing between elements */
+    margin: @g-margin;                   /* Margin around elements */
+    padding: @g-padding;                 /* Padding inside elements */
+    border: 0px solid;                   /* Border around elements */
+    border-radius: @b-radius;            /* Rounded corners for elements */
+    border-color: @b-color;              /* Border color */
+    background-color: transparent;      /* Transparent background */
+    text-color: @fg-color;               /* Text color */
+}
+
+element normal.normal {
+    background-color: transparent;      /* Transparent background for normal elements */
+    text-color: @fg-color;               /* Text color */
+}
+
+element alternate.normal {
+    background-color: @alt-color;        /* Background color for alternate elements */
+    text-color: @fg-color;               /* Text color */
+}
+
+element selected.active {
+    background-color: #A8B5D2;         /* Pastel toned down blue for selected active elements */
+    text-color: @hlt-color;              /* Text color for selected active elements */
+}
+
+element selected.normal {
+    background-color: #A8B5D2;         /* Pastel toned down blue for selected normal elements */
+    text-color: @hlt-color;              /* Text color for selected normal elements */
+}
+
+message {
+    background-color: red;               /* Background color for the message box */
+    border: 0px solid;                   /* No border around the message box */
+}

@@ -1,0 +1,85 @@
+* {
+    font-family: "JetBrains Mono", "Symbols Nerd Font";
+    font-size: 24px;
+    transition-property: background-color;
+    transition-duration: 0.7s;
+}
+
+window {
+    background-color: #11111b;
+}
+
+button {
+    background-color: #11111b;
+    border-style: solid;
+    border-radius: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    margin: 15px;
+}
+
+button:active,
+button:hover {
+    background-color: #cdd6f4;
+}
+
+button:focus {
+    background-color: #cdd6f4;
+}
+
+#lock {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/lock.png");
+}
+
+#lock:hover {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/lock-hover.png");
+    color: #11111b;
+}
+
+#logout {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/logout.png");
+}
+
+#logout:hover {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/logout-hover.png");
+    color: #11111b;
+}
+
+#suspend {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/sleep.png");
+}
+
+#suspend:hover {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/sleep-hover.png");
+    color: #11111b;
+}
+
+#shutdown {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/power.png");
+}
+
+#shutdown:hover {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/power-hover.png");
+    color: #11111b;
+}
+
+#reboot {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/restart.png");
+}
+
+#reboot:hover {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/restart-hover.png");
+    color: #11111b;
+}
+
+#exit {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/restart1.png");
+    background-color: #11111b;
+}
+
+#exit:hover {
+    background-image: url("file:///home/smritik/.config/assets/wlogout/assets/restart-hover1.png");
+    color: #11111b;
+    background-color: #cdd6f4;
+}

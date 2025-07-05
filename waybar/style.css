@@ -1,0 +1,144 @@
+* {
+    border: none;
+    border-radius: 0;
+    font-family: JetBrainsMono Nerd Font, monospace;
+    font-weight: bold;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(21, 15, 27, 0);
+    color: #cdd6f4;
+}
+
+#workspaces button {
+    padding: 5px;
+    color: #434553;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    color: #a6adc5;
+}
+
+#workspaces button.focused {
+    color: #a6adc5;
+    background: #eba0ac;
+    border-radius: 5px;
+}
+
+#workspaces button.urgent {
+    color: #11111b;
+    background: #a6e3a1;
+    border-radius: 5px;
+}
+
+#workspaces button:hover {
+    background: #cdd6f4;
+    color: #11111b; 
+    border-radius: 5px;
+}
+
+#taskbar,
+#custom-power,
+#window,
+#clock,
+#battery,
+#pulseaudio,
+#network,
+#cpu,
+#memory,
+#workspaces,
+#tray,
+#backlight {
+    background: #1a1a1a;
+    padding: 0px 10px;
+    margin: 3px 0px;
+    margin-top: 5px;
+    /* border: 1px solid #151525; */
+}
+
+#backlight {
+    border-radius: 5px 0px 0px 5px;
+}
+
+#tray {
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#workspaces {
+    background: #1a1a1a;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding-right: 0px;
+    padding-left: 5px;
+}
+
+#taskbar {
+    background:#1a1a1a;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+#taskbar button:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    color: inherit;
+    box-shadow: none;
+    
+}
+
+
+
+#cpu {
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+}
+
+#memory {
+    border-radius: 5px 0px 0px 5px;
+}
+
+#window {
+    border-radius: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-right: 1px;
+}
+
+#clock {
+    color: #a6adc5;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 5px;
+    border-right: 0px;
+}
+
+#network {
+    color:  #a6adc5;
+    border-radius: 5px 0px 0px 5px;
+
+}
+
+#pulseaudio {
+    color: #a6adc5;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
+#battery {
+    color:#a6adc5;
+    border-radius: 0px 5px 5px 0px;
+    margin-right: 10px;
+}
+
+#custom-power{
+    color: #a6adc5;
+    border-radius: 0px 5px 5px 0px;
+    border-left: 0px;
+    border-right: 0px;
+    margin-right: 10px;
+}
